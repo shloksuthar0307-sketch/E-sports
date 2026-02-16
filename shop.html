@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO ARENA - Merch Shop</title>
+    <title>NEO ARENA - Gaming Merch Shop</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,35 +11,68 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navigation (same as index.html) -->
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <!-- ... same navigation ... -->
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-joystick me-2 text-neon-blue"></i>
+            NEO<span class="text-neon-red">ARENA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">GAMES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        ESPORTS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="events.html">TOURNAMENTS</a></li>
+                        <li><a class="dropdown-item" href="events.html#teams">PRO TEAMS</a></li>
+                        <li><a class="dropdown-item" href="events.html#schedule">MATCH SCHEDULE</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- Shop Header -->
+<!-- Page Header -->
 <section class="container my-5 pt-4">
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">GAMING <span class="text-neon-blue">MERCH</span></h1>
-        <p class="lead text-secondary">Exclusive apparel, accessories, and in-game items</p>
+    <div class="page-header">
+        <h1>GAMING <span class="text-neon-blue">MERCH</span></h1>
+        <p class="lead">Exclusive apparel, accessories, and in-game items</p>
     </div>
 </section>
 
-<!-- Shop Categories -->
+<!-- Shop Items -->
 <section class="container my-5">
     <div class="row g-4">
-        <!-- Category: Apparel -->
+        <!-- Item 1 -->
         <div class="col-md-4">
             <div class="shop-card p-4">
-                <img src="https://placehold.co/400x300/1f2a3f/0dcaf0?text=NEO+HOODIE" 
-                     class="card-img-top rounded-3 mb-3" alt="Neo Hoodie">
+                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top rounded-3 mb-3" alt="Neo Hoodie">
                 <h4>NEO ARENA HOODIE</h4>
                 <p class="text-secondary">Limited edition, premium quality</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -52,10 +85,10 @@
             </div>
         </div>
         
+        <!-- Item 2 -->
         <div class="col-md-4">
             <div class="shop-card p-4">
-                <img src="https://placehold.co/400x300/1f2a3f/f05b5b?text=GAMING+TEE" 
-                     class="card-img-top rounded-3 mb-3" alt="Gaming Tee">
+                <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top rounded-3 mb-3" alt="Vortex Jersey">
                 <h4>VORTEX JERSEY</h4>
                 <p class="text-secondary">Pro player edition, breathable fabric</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -68,10 +101,10 @@
             </div>
         </div>
         
+        <!-- Item 3 -->
         <div class="col-md-4">
             <div class="shop-card p-4">
-                <img src="https://placehold.co/400x300/1f2a3f/aa55cc?text=MOUSE+PAD" 
-                     class="card-img-top rounded-3 mb-3" alt="Mouse Pad">
+                <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top rounded-3 mb-3" alt="RGB Mouse Pad">
                 <h4>RGB MOUSEPAD</h4>
                 <p class="text-secondary">XXL size, smooth surface, RGB lighting</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -83,12 +116,104 @@
                 </button>
             </div>
         </div>
+        
+        <!-- Item 4 -->
+        <div class="col-md-4">
+            <div class="shop-card p-4">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top rounded-3 mb-3" alt="Gaming Headset">
+                <h4>NEO HEADSET</h4>
+                <p class="text-secondary">7.1 surround sound, noise-cancelling</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="price-tag">$79.99</span>
+                    <span class="badge bg-neon-blue">In Stock</span>
+                </div>
+                <button class="btn btn-neon-blue w-100 mt-3">
+                    <i class="bi bi-cart-plus me-2"></i>ADD TO CART
+                </button>
+            </div>
+        </div>
+        
+        <!-- Item 5 -->
+        <div class="col-md-4">
+            <div class="shop-card p-4">
+                <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top rounded-3 mb-3" alt="Gaming Keyboard">
+                <h4>MECHANICAL KEYBOARD</h4>
+                <p class="text-secondary">RGB, mechanical switches, wrist rest</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="price-tag">$129.99</span>
+                    <span class="badge bg-neon-red">Limited</span>
+                </div>
+                <button class="btn btn-neon-blue w-100 mt-3">
+                    <i class="bi bi-cart-plus me-2"></i>ADD TO CART
+                </button>
+            </div>
+        </div>
+        
+        <!-- Item 6 -->
+        <div class="col-md-4">
+            <div class="shop-card p-4">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top rounded-3 mb-3" alt="Gaming Mouse">
+                <h4>PRO GAMING MOUSE</h4>
+                <p class="text-secondary">16K DPI, lightweight, RGB</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="price-tag">$59.99</span>
+                    <span class="badge bg-success">New</span>
+                </div>
+                <button class="btn btn-neon-blue w-100 mt-3">
+                    <i class="bi bi-cart-plus me-2"></i>ADD TO CART
+                </button>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- Footer (same as index.html) -->
+<!-- Footer -->
 <footer class="footer">
-    <!-- ... same footer content ... -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4 class="text-neon-blue mb-3">
+                    <i class="bi bi-joystick me-2"></i>NEO<span class="text-neon-red">ARENA</span>
+                </h4>
+                <p class="text-secondary">Your ultimate gaming destination. Compete, shop, and connect with millions of gamers worldwide.</p>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-white">QUICK LINKS</h5>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="events.html">Events</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-white">FOLLOW US</h5>
+                <div>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="border-secondary">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-secondary mb-0">© 2025 NEO ARENA. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-secondary text-decoration-none">Terms of Service</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap JS -->

@@ -1,0 +1,560 @@
+/* ========== NEO ARENA GAMING WEBSITE - PURE CSS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0c0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1e2a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff3b3b;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffff;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Neon Text Colors */
+.text-neon-blue {
+    color: #00ffff !important;
+}
+
+.text-neon-red {
+    color: #ff3b3b !important;
+}
+
+.text-neon-green {
+    color: #00ff9d !important;
+}
+
+.text-neon-purple {
+    color: #b829e8 !important;
+}
+
+/* Backgrounds */
+.bg-dark-deep {
+    background-color: #0a0c0f;
+}
+
+.bg-dark-card {
+    background-color: #151a24;
+}
+
+/* Neon Buttons */
+.btn-neon-blue {
+    background: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-neon-blue:hover {
+    background: #00ffff;
+    color: #0a0c0f;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.btn-neon-red {
+    background: transparent;
+    border: 2px solid #ff3b3b;
+    color: #ff3b3b;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-neon-red:hover {
+    background: #ff3b3b;
+    color: #0a0c0f;
+    box-shadow: 0 0 20px #ff3b3b;
+}
+
+.btn-neon-outline {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-neon-outline:hover {
+    background: #ffffff;
+    color: #0a0c0f;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #0a0c0f !important;
+    border-bottom: 2px solid #00ffff;
+    padding: 15px 0;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #00ffff !important;
+}
+
+.navbar .nav-link.active {
+    color: #00ffff !important;
+}
+
+.navbar .navbar-brand {
+    color: #fff !important;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.dropdown-menu {
+    background-color: #151a24;
+    border: 1px solid #00ffff;
+}
+
+.dropdown-item {
+    color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #00ffff;
+    color: #0a0c0f;
+}
+
+/* Cards Styling */
+.game-card, .event-card, .shop-card, .team-card {
+    background-color: #151a24;
+    border: 1px solid #2b3340;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+}
+
+.game-card:hover, .event-card:hover, .shop-card:hover, .team-card:hover {
+    transform: translateY(-10px);
+    border-color: #00ffff;
+    box-shadow: 0 20px 30px rgba(0, 255, 255, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #2b3340;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Rating Stars */
+.rating i {
+    color: #ffb347;
+    margin-right: 2px;
+}
+
+.rating .bi-star {
+    color: #555;
+}
+
+/* Section Titles */
+.section-title {
+    border-left: 6px solid #ff3b3b;
+    padding-left: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.section-title span {
+    color: #00ffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(145deg, #0b0f17 0%, #131a28 100%);
+    padding: 80px 0;
+    border-bottom: 2px solid #00ffff;
+}
+
+/* Owl Carousel Customization */
+.owl-carousel .item {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.owl-carousel .slide-caption {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    color: white;
+    z-index: 10;
+    max-width: 600px;
+}
+
+.owl-carousel .slide-caption h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.owl-carousel .slide-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.owl-dot span {
+    width: 12px !important;
+    height: 12px !important;
+    background: #fff !important;
+    margin: 0 5px !important;
+}
+
+.owl-dot.active span {
+    background: #00ffff !important;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.owl-nav button {
+    width: 50px !important;
+    height: 50px !important;
+    background: rgba(0, 255, 255, 0.3) !important;
+    border-radius: 50% !important;
+    color: #fff !important;
+    font-size: 24px !important;
+    transition: all 0.3s ease !important;
+}
+
+.owl-nav button:hover {
+    background: #00ffff !important;
+    color: #0a0c0f !important;
+}
+
+/* Form Styling */
+.form-control, .form-select {
+    background-color: #1a1f2a;
+    border: 1px solid #2b3340;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    background-color: #1a1f2a;
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+    background-color: #1a1f2a;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f8c9f;
+    border: 2px dashed #00ffff;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a0c0f;
+    border-top: 2px solid #00ffff;
+    padding: 60px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-right: 25px;
+}
+
+.footer-links a:hover {
+    color: #00ffff;
+}
+
+.social-icon {
+    color: #aaa;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #00ffff;
+}
+
+/* Badge Styling */
+.badge-neon {
+    background: #00ffff;
+    color: #0a0c0f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.badge.bg-neon-blue {
+    background: #00ffff;
+    color: #0a0c0f;
+}
+
+.badge.bg-neon-red {
+    background: #ff3b3b;
+    color: #fff;
+}
+
+/* Tournament Card */
+.tournament-card {
+    background-color: #151a24;
+    border-left: 4px solid #ff3b3b;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.tournament-card:hover {
+    transform: translateX(10px);
+    border-left-color: #00ffff;
+}
+
+/* Price Tags */
+.price-tag {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00ffff;
+}
+
+/* Team Member */
+.team-member {
+    text-align: center;
+    padding: 20px;
+    background-color: #151a24;
+    border-radius: 20px;
+    border: 1px solid #2b3340;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    border-color: #00ffff;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00ffff;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.team-member:hover img {
+    border-color: #ff3b3b;
+}
+
+/* News Item */
+.news-item {
+    background-color: #151a24;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #2b3340;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    border-color: #00ffff;
+    transform: translateX(5px);
+}
+
+.news-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.news-tag.update {
+    background: #00ffff;
+    color: #0a0c0f;
+}
+
+.news-tag.esports {
+    background: #ff3b3b;
+    color: #fff;
+}
+
+/* Table Styling */
+.table-dark {
+    background-color: #151a24;
+}
+
+.table-dark thead th {
+    background-color: #1f2937;
+    color: #00ffff;
+    border-bottom: 2px solid #00ffff;
+}
+
+.table-dark tbody tr:hover {
+    background-color: #1f2937;
+}
+
+/* Contact Info Card */
+.contact-info-card {
+    background-color: #151a24;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #2b3340;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info-item i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #00ffff;
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    margin: 40px 0 60px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .owl-carousel .slide-caption {
+        left: 50px;
+        bottom: 50px;
+    }
+    
+    .owl-carousel .slide-caption h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .owl-carousel .item {
+        height: 400px;
+    }
+    
+    .owl-carousel .slide-caption {
+        left: 30px;
+        bottom: 30px;
+        max-width: 90%;
+    }
+    
+    .owl-carousel .slide-caption h2 {
+        font-size: 2rem;
+    }
+    
+    .footer-links a {
+        display: inline-block;
+        margin: 5px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .owl-carousel .item {
+        height: 350px;
+    }
+    
+    .owl-carousel .slide-caption h2 {
+        font-size: 1.5rem;
+    }
+    
+    .owl-carousel .slide-caption p {
+        font-size: 1rem;
+    }
+}

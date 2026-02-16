@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEO ARENA - Contact</title>
+    <title>NEO ARENA - Contact Us</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,24 +11,58 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navigation (same as index.html) -->
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <!-- ... same navigation ... -->
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-joystick me-2 text-neon-blue"></i>
+            NEO<span class="text-neon-red">ARENA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">GAMES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        ESPORTS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="events.html">TOURNAMENTS</a></li>
+                        <li><a class="dropdown-item" href="events.html#teams">PRO TEAMS</a></li>
+                        <li><a class="dropdown-item" href="events.html#schedule">MATCH SCHEDULE</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- Contact Header -->
+<!-- Page Header -->
 <section class="container my-5 pt-4">
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">GET IN <span class="text-neon-blue">TOUCH</span></h1>
-        <p class="lead text-secondary">We'd love to hear from you</p>
+    <div class="page-header">
+        <h1>GET IN <span class="text-neon-blue">TOUCH</span></h1>
+        <p class="lead">We'd love to hear from you</p>
     </div>
 </section>
 
@@ -73,42 +107,45 @@
         <div class="col-md-6">
             <h2 class="mb-4">CONTACT INFO</h2>
             
-            <div class="bg-dark-card p-4 rounded-4 mb-4">
-                <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-geo-alt-fill text-neon-blue fs-3 me-3"></i>
+            <div class="contact-info-card">
+                <div class="contact-info-item">
+                    <i class="bi bi-geo-alt-fill text-neon-blue"></i>
                     <div>
                         <h5 class="mb-1">Visit Us</h5>
                         <p class="text-secondary mb-0">123 Gamer Avenue, Los Angeles, CA 90001</p>
                     </div>
                 </div>
                 
-                <div class="d-flex align-items-center mb-3">
-                    <i class="bi bi-envelope-fill text-neon-red fs-3 me-3"></i>
+                <div class="contact-info-item">
+                    <i class="bi bi-envelope-fill text-neon-red"></i>
                     <div>
                         <h5 class="mb-1">Email Us</h5>
                         <p class="text-secondary mb-0">contact@neoarena.gg</p>
+                        <p class="text-secondary mb-0">support@neoarena.gg</p>
                     </div>
                 </div>
                 
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-telephone-fill text-neon-blue fs-3 me-3"></i>
+                <div class="contact-info-item">
+                    <i class="bi bi-telephone-fill text-neon-green"></i>
                     <div>
                         <h5 class="mb-1">Call Us</h5>
                         <p class="text-secondary mb-0">+1 (800) 123-4567</p>
+                        <p class="text-secondary mb-0">+1 (800) 765-4321</p>
                     </div>
                 </div>
             </div>
             
-            <h3 class="mb-3">Follow Us</h3>
+            <h3 class="mt-4 mb-3">Follow Us</h3>
             <div class="mb-4">
                 <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
                 <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
                 <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
                 <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-twitch"></i></a>
             </div>
             
-            <h3 class="mb-3">Location</h3>
+            <h3 class="mb-3">Our Location</h3>
             <div class="map-placeholder">
                 <i class="bi bi-map-fill me-2"></i> Google Maps Integration
             </div>
@@ -116,9 +153,53 @@
     </div>
 </section>
 
-<!-- Footer (same as index.html) -->
+<!-- Footer -->
 <footer class="footer">
-    <!-- ... same footer content ... -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4 class="text-neon-blue mb-3">
+                    <i class="bi bi-joystick me-2"></i>NEO<span class="text-neon-red">ARENA</span>
+                </h4>
+                <p class="text-secondary">Your ultimate gaming destination. Compete, shop, and connect with millions of gamers worldwide.</p>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-white">QUICK LINKS</h5>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="events.html">Events</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-white">FOLLOW US</h5>
+                <div>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="border-secondary">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-secondary mb-0">© 2025 NEO ARENA. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-secondary text-decoration-none">Terms of Service</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap JS -->

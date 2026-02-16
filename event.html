@@ -11,24 +11,60 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navigation (same as index.html) -->
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <!-- ... same navigation ... -->
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-joystick me-2 text-neon-blue"></i>
+            NEO<span class="text-neon-red">ARENA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">GAMES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                        ESPORTS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="events.html">TOURNAMENTS</a></li>
+                        <li><a class="dropdown-item" href="#teams">PRO TEAMS</a></li>
+                        <li><a class="dropdown-item" href="#schedule">MATCH SCHEDULE</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">LIVE MATCHES <span class="badge bg-neon-red ms-2">LIVE</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- Events Header -->
+<!-- Page Header -->
 <section class="container my-5 pt-4">
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">ESPORTS <span class="text-neon-red">EVENTS</span></h1>
-        <p class="lead text-secondary">Compete in tournaments or cheer for your favorite teams</p>
+    <div class="page-header">
+        <h1>ESPORTS <span class="text-neon-red">EVENTS</span></h1>
+        <p class="lead">Compete in tournaments or cheer for your favorite teams</p>
     </div>
 </section>
 
@@ -92,8 +128,7 @@
     <div class="row g-4">
         <div class="col-sm-6 col-lg-3">
             <div class="team-card p-4 text-center">
-                <img src="https://placehold.co/200x200/1f2a3f/0dcaf0?text=TEAM+VORTEX" 
-                     class="rounded-circle w-75 mb-3 border border-3 border-info" alt="Vortex">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle w-75 mb-3 border border-3 border-info" alt="Vortex">
                 <h4>VORTEX</h4>
                 <p class="text-neon-blue mb-1">World Rank #3</p>
                 <p class="text-secondary small">Win Rate: 78%</p>
@@ -106,14 +141,39 @@
         
         <div class="col-sm-6 col-lg-3">
             <div class="team-card p-4 text-center">
-                <img src="https://placehold.co/200x200/1f2a3f/f05b5b?text=NEMESIS" 
-                     class="rounded-circle w-75 mb-3 border border-3 border-danger" alt="Nemesis">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle w-75 mb-3 border border-3 border-danger" alt="Nemesis">
                 <h4>NEMESIS</h4>
                 <p class="text-neon-red mb-1">Reigning Champs</p>
                 <p class="text-secondary small">Win Rate: 82%</p>
                 <div class="d-flex justify-content-center gap-2">
                     <span class="badge bg-dark">Strike Force</span>
                     <span class="badge bg-dark">Apex</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-3">
+            <div class="team-card p-4 text-center">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle w-75 mb-3 border border-3 border-success" alt="Fusion">
+                <h4>FUSION</h4>
+                <p class="text-neon-green mb-1">Rising Stars</p>
+                <p class="text-secondary small">Win Rate: 71%</p>
+                <div class="d-flex justify-content-center gap-2">
+                    <span class="badge bg-dark">Speed Demons</span>
+                    <span class="badge bg-dark">Rocket League</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-3">
+            <div class="team-card p-4 text-center">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle w-75 mb-3 border border-3 border-warning" alt="Eclipse">
+                <h4>ECLIPSE</h4>
+                <p class="text-neon-purple mb-1">Dark Horses</p>
+                <p class="text-secondary small">Win Rate: 69%</p>
+                <div class="d-flex justify-content-center gap-2">
+                    <span class="badge bg-dark">Mystic Quest</span>
+                    <span class="badge bg-dark">LoL</span>
                 </div>
             </div>
         </div>
@@ -136,25 +196,81 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>VORTEX vs NEMESIS</td>
+                    <td><strong>VORTEX</strong> vs <strong class="text-neon-red">NEMESIS</strong></td>
                     <td>World Champs</td>
                     <td>Dec 16, 19:00 UTC</td>
+                    <td><a href="#" class="text-neon-blue">Twitch</a> / <a href="#" class="text-neon-red">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td><strong>FUSION</strong> vs <strong class="text-neon-purple">ECLIPSE</strong></td>
+                    <td>Neon Cup</td>
+                    <td>Jan 11, 15:00 UTC</td>
                     <td><a href="#" class="text-neon-blue">Twitch</a></td>
                 </tr>
                 <tr>
-                    <td>FUSION vs ECLIPSE</td>
-                    <td>Neon Cup</td>
-                    <td>Jan 11, 15:00 UTC</td>
-                    <td><a href="#" class="text-neon-blue">YouTube</a></td>
+                    <td><strong>VORTEX</strong> vs <strong>FUSION</strong></td>
+                    <td>World Champs</td>
+                    <td>Dec 17, 18:00 UTC</td>
+                    <td><a href="#" class="text-neon-blue">Twitch</a> / <a href="#" class="text-neon-red">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td><strong>NEMESIS</strong> vs <strong>ECLIPSE</strong></td>
+                    <td>World Champs</td>
+                    <td>Dec 18, 20:00 UTC</td>
+                    <td><a href="#" class="text-neon-blue">Twitch</a></td>
                 </tr>
             </tbody>
         </table>
     </div>
 </section>
 
-<!-- Footer (same as index.html) -->
+<!-- Footer -->
 <footer class="footer">
-    <!-- ... same footer content ... -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4 class="text-neon-blue mb-3">
+                    <i class="bi bi-joystick me-2"></i>NEO<span class="text-neon-red">ARENA</span>
+                </h4>
+                <p class="text-secondary">Your ultimate gaming destination. Compete, shop, and connect with millions of gamers worldwide.</p>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-white">QUICK LINKS</h5>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="events.html">Events</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-white">FOLLOW US</h5>
+                <div>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="border-secondary">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-secondary mb-0">© 2025 NEO ARENA. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-secondary text-decoration-none">Terms of Service</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap JS -->
