@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO ARENA - Games Library</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation (same as index.html) -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">
+            <i class="bi bi-joystick me-2 text-neon-blue"></i>
+            NEO<span class="text-neon-red">ARENA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link active" href="games.html">GAMES</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ESPORTS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="event.html">TOURNAMENTS</a></li>
+                        <li><a class="dropdown-item" href="event.html#teams">TEAMS</a></li>
+                        <li><a class="dropdown-item" href="event.html#schedule">SCHEDULE</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.htm">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="container my-5 pt-4">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">GAME <span class="text-neon-blue">LIBRARY</span></h1>
+        <p class="lead text-secondary">Discover our collection of competitive and casual games</p>
+    </div>
+</section>
+
+<!-- Games Grid -->
+<section class="container my-5">
+    <div class="row g-4">
+        <!-- Game Card 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="game-card">
+                <img src="https://placehold.co/600x300/1f2a3f/f05b5b?text=VALKYRIE+WAR" class="card-img-top" alt="Valkyrie War">
+                <div class="p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h4>VALKYRIE WAR</h4>
+                        <span class="badge bg-neon-blue">NEW</span>
+                    </div>
+                    <div class="rating mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i> <span>4.4</span>
+                    </div>
+                    <p class="text-secondary">Battle royale with mythological powers. 100 players, one winner.</p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-dark">FPS</span>
+                        <span class="badge bg-dark">Battle Royale</span>
+                        <span class="badge bg-dark">Multiplayer</span>
+                    </div>
+                    <button class="btn btn-neon-blue w-100 mt-3">PLAY NOW</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Game Card 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="game-card">
+                <img src="https://placehold.co/600x300/1f2a3f/0dcaf0?text=CYBER+RACER+X" class="card-img-top" alt="Cyber Racer X">
+                <div class="p-4">
+                    <h4>CYBER RACER X</h4>
+                    <div class="rating mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i> <span>4.9</span>
+                    </div>
+                    <p class="text-secondary">Neon-soaked racing with futuristic vehicles. 20 tracks available.</p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-dark">Racing</span>
+                        <span class="badge bg-dark">Arcade</span>
+                        <span class="badge bg-dark">Online</span>
+                    </div>
+                    <button class="btn btn-neon-blue w-100 mt-3">PLAY NOW</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Game Card 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="game-card">
+                <img src="https://placehold.co/600x300/1f2a3f/aa55cc?text=INFINITY+DUEL" class="card-img-top" alt="Infinity Duel">
+                <div class="p-4">
+                    <h4>INFINITY DUEL</h4>
+                    <div class="rating mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i> <span>3.8</span>
+                    </div>
+                    <p class="text-secondary">Strategic card battler with deep deck-building mechanics.</p>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-dark">Card Game</span>
+                        <span class="badge bg-dark">Strategy</span>
+                        <span class="badge bg-dark">PvP</span>
+                    </div>
+                    <button class="btn btn-neon-blue w-100 mt-3">PLAY NOW</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add more game cards as needed -->
+    </div>
+</section>
+
+<!-- Footer (same as index.html) -->
+<footer class="footer">
+    <!-- ... same footer content ... -->
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

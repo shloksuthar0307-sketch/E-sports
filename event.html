@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO ARENA - Esports Events</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation (same as index.html) -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <!-- ... same navigation ... -->
+</nav>
+
+<!-- Events Header -->
+<section class="container my-5 pt-4">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">ESPORTS <span class="text-neon-red">EVENTS</span></h1>
+        <p class="lead text-secondary">Compete in tournaments or cheer for your favorite teams</p>
+    </div>
+</section>
+
+<!-- Upcoming Tournaments -->
+<section class="container my-5">
+    <h2 class="section-title">UPCOMING <span>TOURNAMENTS</span></h2>
+    
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="tournament-card">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-trophy-fill text-neon-red fs-1 me-3"></i>
+                    <div>
+                        <h3 class="mb-1">WORLD CHAMP SERIES</h3>
+                        <p class="text-neon-blue mb-0">December 15-20, 2025</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p><i class="bi bi-cash-stack text-neon-blue me-2"></i>$250,000 Prize Pool</p>
+                        <p><i class="bi bi-people-fill text-neon-red me-2"></i>16 Teams</p>
+                    </div>
+                    <div class="col-6">
+                        <p><i class="bi bi-geo-alt-fill text-neon-blue me-2"></i>Los Angeles, CA</p>
+                        <p><i class="bi bi-controller text-neon-red me-2"></i>Strike Force</p>
+                    </div>
+                </div>
+                <button class="btn btn-neon-blue mt-2">REGISTER INTEREST</button>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="tournament-card">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="bi bi-calendar-event-fill text-neon-blue fs-1 me-3"></i>
+                    <div>
+                        <h3 class="mb-1">NEON CUP (ONLINE)</h3>
+                        <p class="text-neon-blue mb-0">January 10-12, 2026</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p><i class="bi bi-cash-stack text-neon-blue me-2"></i>$50,000 Prize Pool</p>
+                        <p><i class="bi bi-people-fill text-neon-red me-2"></i>Open Qualifiers</p>
+                    </div>
+                    <div class="col-6">
+                        <p><i class="bi bi-globe text-neon-blue me-2"></i>Worldwide</p>
+                        <p><i class="bi bi-controller text-neon-red me-2"></i>Speed Demons</p>
+                    </div>
+                </div>
+                <button class="btn btn-neon-blue mt-2">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Profiles -->
+<section id="teams" class="container my-5">
+    <h2 class="section-title">TEAM <span>PROFILES</span></h2>
+    
+    <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+            <div class="team-card p-4 text-center">
+                <img src="https://placehold.co/200x200/1f2a3f/0dcaf0?text=TEAM+VORTEX" 
+                     class="rounded-circle w-75 mb-3 border border-3 border-info" alt="Vortex">
+                <h4>VORTEX</h4>
+                <p class="text-neon-blue mb-1">World Rank #3</p>
+                <p class="text-secondary small">Win Rate: 78%</p>
+                <div class="d-flex justify-content-center gap-2">
+                    <span class="badge bg-dark">Strike Force</span>
+                    <span class="badge bg-dark">Valorant</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-3">
+            <div class="team-card p-4 text-center">
+                <img src="https://placehold.co/200x200/1f2a3f/f05b5b?text=NEMESIS" 
+                     class="rounded-circle w-75 mb-3 border border-3 border-danger" alt="Nemesis">
+                <h4>NEMESIS</h4>
+                <p class="text-neon-red mb-1">Reigning Champs</p>
+                <p class="text-secondary small">Win Rate: 82%</p>
+                <div class="d-flex justify-content-center gap-2">
+                    <span class="badge bg-dark">Strike Force</span>
+                    <span class="badge bg-dark">Apex</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Schedule -->
+<section id="schedule" class="container my-5">
+    <h2 class="section-title">MATCH <span>SCHEDULE</span></h2>
+    
+    <div class="table-responsive">
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Match</th>
+                    <th>Tournament</th>
+                    <th>Date & Time</th>
+                    <th>Stream</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VORTEX vs NEMESIS</td>
+                    <td>World Champs</td>
+                    <td>Dec 16, 19:00 UTC</td>
+                    <td><a href="#" class="text-neon-blue">Twitch</a></td>
+                </tr>
+                <tr>
+                    <td>FUSION vs ECLIPSE</td>
+                    <td>Neon Cup</td>
+                    <td>Jan 11, 15:00 UTC</td>
+                    <td><a href="#" class="text-neon-blue">YouTube</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Footer (same as index.html) -->
+<footer class="footer">
+    <!-- ... same footer content ... -->
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
