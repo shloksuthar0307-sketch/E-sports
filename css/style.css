@@ -12,23 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #1a1e2a;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #ff3b3b;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #00ffff;
-}
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -204,8 +187,26 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
+
 .section-title span {
     color: #00ffff;
+    /* border: 2px solid #00ffff; */
+}
+.btn-neon-blue-1 {
+    width: 296px;
+    height: 126px;
+    background: transparent;
+    color: #00ffff;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-neon-blue-1:hover {
+    border: 1px solid #00ffff;
+    background: #151A24;
+    box-shadow: 0 0 20px #00ffff;
 }
 
 /* Hero Section */

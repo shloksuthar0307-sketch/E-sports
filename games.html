@@ -6,10 +6,10 @@
     <title>NEO ARENA - Games Library</title>
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="./all.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,7 +19,7 @@
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="home.html">
             <i class="bi bi-joystick me-2 text-neon-blue"></i>
             NEO<span class="text-neon-red">ARENA</span>
         </a>
@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" href="home.html">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="games.html">GAMES</a>
@@ -39,9 +39,9 @@
                         ESPORTS
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="events.html">TOURNAMENTS</a></li>
-                        <li><a class="dropdown-item" href="events.html#teams">PRO TEAMS</a></li>
-                        <li><a class="dropdown-item" href="events.html#schedule">MATCH SCHEDULE</a></li>
+                        <li><a class="dropdown-item" href="event.html">TOURNAMENTS</a></li>
+                        <li><a class="dropdown-item" href="event.html#teams">PRO TEAMS</a></li>
+                        <li><a class="dropdown-item" href="event.html#schedule">MATCH SCHEDULE</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -72,24 +72,24 @@
         <!-- Game 1 -->
         <div class="col-md-6 col-lg-4">
             <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Valkyrie War">
+                <img src="./img/velorant.png" class="card-img-top" alt="Valkyrie War">
                 <div class="p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <h4>VALKYRIE WAR</h4>
+                        <h4>VALORANT</h4>
                         <span class="badge bg-neon-blue">NEW</span>
                     </div>
                     <div class="rating mb-2">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star"></i> <span>4.4/5</span>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i><span>4/5</span>
                     </div>
-                    <p class="text-secondary mb-3">Battle royale with mythological powers. 100 players, one winner.</p>
+                    <p class="text-secondary mb-3">It blends precise gunplay with unique character abilities,a shooter and a strategy game.</p>
                     <div class="d-flex gap-2 mb-3">
-                        <span class="badge bg-dark">Battle Royale</span>
-                        <span class="badge bg-dark">Fantasy</span>
-                        <span class="badge bg-dark">PvP</span>
+                        <span class="badge bg-dark">shooter</span>
+                        <span class="badge bg-dark">strategy game</span>
+                        <span class="badge bg-dark">FPS</span>
                     </div>
-                    <button class="btn btn-neon-blue w-100">PLAY NOW</button>
+                    <a href="https://playvalorant.com/en-gb/" class="btn btn-neon-blue w-100"> PLAY NOW</a>
                 </div>
             </div>
         </div>
@@ -97,21 +97,21 @@
         <!-- Game 2 -->
         <div class="col-md-6 col-lg-4">
             <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cyber Racer X">
+                <img src="img/cs.jpg" class="card-img-top" alt="Cyber Racer X">
                 <div class="p-4">
-                    <h4>CYBER RACER X</h4>
+                    <h4>Counter-Strike</h4>
                     <div class="rating mb-2">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i> <span>4.9/5</span>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i><span>4.5/5</span>
                     </div>
-                    <p class="text-secondary mb-3">Neon-soaked racing with futuristic vehicles. 20 tracks available.</p>
+                    <p class="text-secondary mb-3"> Terrorists plant the bomb <br>Counter-Terrorists defuse it.</p>
                     <div class="d-flex gap-2 mb-3">
-                        <span class="badge bg-dark">Racing</span>
-                        <span class="badge bg-dark">Cyberpunk</span>
+                        <span class="badge bg-dark">Game sense</span>
                         <span class="badge bg-dark">Multiplayer</span>
+                        <span class="badge bg-dark">PvP</span>
                     </div>
-                    <button class="btn btn-neon-blue w-100">PLAY NOW</button>
+                    <a href="https://store.steampowered.com/app/730/CounterStrike_2/" class="btn btn-neon-blue w-100"> PLAY NOW</a> 
                 </div>
             </div>
         </div>
@@ -119,21 +119,22 @@
         <!-- Game 3 -->
         <div class="col-md-6 col-lg-4">
             <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Infinity Duel">
+                <img src="./img/cod.png" class="card-img-top" alt="Infinity Duel">
                 <div class="p-4">
-                    <h4>INFINITY DUEL</h4>
+                    <h4>Call of Duty: Black Ops 7</h4>
                     <div class="rating mb-2">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i> <span>3.8/5</span>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <span>3.5/5</span>
                     </div>
-                    <p class="text-secondary mb-3">Strategic card battler with deep deck-building mechanics.</p>
+                    <p class="text-secondary mb-3">Realistic and futuristic weapons <br>Popular Zombies mode </p>
                     <div class="d-flex gap-2 mb-3">
-                        <span class="badge bg-dark">Card Game</span>
                         <span class="badge bg-dark">Strategy</span>
+                        <span class="badge bg-dark">Multiplayer</span>
                         <span class="badge bg-dark">PvP</span>
                     </div>
-                    <button class="btn btn-neon-blue w-100">PLAY NOW</button>
+                    <a href="https://store.steampowered.com/app/3606480/Call_of_Duty_Black_Ops_7/" class="btn btn-neon-blue w-100"> PLAY NOW</a> 
+
                 </div>
             </div>
         </div>
@@ -141,21 +142,22 @@
         <!-- Game 4 -->
         <div class="col-md-6 col-lg-4">
             <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Strike Force">
+                <img src="./img/Street Fighter.png" class="card-img-top" alt="Strike Force">
                 <div class="p-4">
-                    <h4>STRIKE FORCE</h4>
+                    <h4>Street Fighter</h4>
                     <div class="rating mb-2">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i> <span>4.6/5</span>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i> <span>4.6/5</span>
                     </div>
-                    <p class="text-secondary mb-3">Tactical FPS with high-stakes battles. Join millions of players.</p>
+                    <p class="text-secondary mb-3">Made fighting games popular in arcades <br>Introduced special moves like Hadouken</p>
                     <div class="d-flex gap-2 mb-3">
-                        <span class="badge bg-dark">FPS</span>
-                        <span class="badge bg-dark">Tactical</span>
+                        <span class="badge bg-dark">power</span>
+                        <span class="badge bg-dark">speed</span>
                         <span class="badge bg-dark">Esports</span>
                     </div>
-                    <button class="btn btn-neon-blue w-100">PLAY NOW</button>
+                    <a href="https://store.steampowered.com/app/310950/Street_Fighter_V/" class="btn btn-neon-blue w-100"> PLAY NOW</a> 
+
                 </div>
             </div>
         </div>
@@ -163,13 +165,13 @@
         <!-- Game 5 -->
         <div class="col-md-6 col-lg-4">
             <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Speed Demons">
+                <img src="./img/Forza Horizon 5.png" class="card-img-top" alt="Speed Demons">
                 <div class="p-4">
-                    <h4>SPEED DEMONS</h4>
+                    <h4>Forza Horizon 5</h4>
                     <div class="rating mb-2">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i> <span>5.0/5</span>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><span>5.0/5</span>
                     </div>
                     <p class="text-secondary mb-3">Arcade racing at its finest. Drift, boost, and dominate.</p>
                     <div class="d-flex gap-2 mb-3">
@@ -177,7 +179,8 @@
                         <span class="badge bg-dark">Arcade</span>
                         <span class="badge bg-dark">Online</span>
                     </div>
-                    <button class="btn btn-neon-blue w-100">PLAY NOW</button>
+                    <a href="https://www.xbox.com/en-IN/games/store/forza-horizon-5/9nnx1vvr3knq?utm_source=chatgpt.com" class="btn btn-neon-blue w-100"> PLAY NOW</a> 
+
                 </div>
             </div>
         </div>
@@ -185,21 +188,22 @@
         <!-- Game 6 -->
         <div class="col-md-6 col-lg-4">
             <div class="game-card">
-                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mystic Quest">
+                <img src="./img/pubg.png" class="card-img-top" alt="Mystic Quest">
                 <div class="p-4">
-                    <h4>MYSTIC QUEST</h4>
+                    <h4>PUBG</h4>
                     <div class="rating mb-2">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star"></i> <span>4.2/5</span>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <span>3/5</span>
                     </div>
-                    <p class="text-secondary mb-3">Open world RPG where magic meets steel. Forge your legend.</p>
+                    <p class="text-secondary mb-3">Realistic gun mechanics <br> Voice chat teamwork</p>
                     <div class="d-flex gap-2 mb-3">
-                        <span class="badge bg-dark">RPG</span>
+                        <span class="badge bg-dark">surviving</span>
                         <span class="badge bg-dark">Open World</span>
-                        <span class="badge bg-dark">Fantasy</span>
+                        <span class="badge bg-dark">Tactical gameplay</span>
                     </div>
-                    <button class="btn btn-neon-blue w-100">PLAY NOW</button>
+                    <a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" class="btn btn-neon-blue w-100"> PLAY NOW</a> 
+
                 </div>
             </div>
         </div>
@@ -210,28 +214,28 @@
 <section class="container my-5">
     <h2 class="section-title">GAME <span>CATEGORIES</span></h2>
     <div class="row g-3">
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3  btn-neon-blue-1">
             <div class="bg-dark-card p-4 rounded-4 text-center">
                 <i class="bi bi-controller text-neon-blue display-4"></i>
                 <h5 class="mt-2">ACTION</h5>
                 <p class="text-secondary small">24 Games</p>
             </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 btn-neon-blue-1">
             <div class="bg-dark-card p-4 rounded-4 text-center">
                 <i class="bi bi-car-front text-neon-red display-4"></i>
                 <h5 class="mt-2">RACING</h5>
                 <p class="text-secondary small">12 Games</p>
             </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 btn-neon-blue-1">
             <div class="bg-dark-card p-4 rounded-4 text-center">
                 <i class="bi bi-dice-6 text-neon-green display-4"></i>
                 <h5 class="mt-2">STRATEGY</h5>
                 <p class="text-secondary small">18 Games</p>
             </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 btn-neon-blue-1">
             <div class="bg-dark-card p-4 rounded-4 text-center">
                 <i class="bi bi-bullseye text-neon-purple display-4"></i>
                 <h5 class="mt-2">FPS</h5>
@@ -267,11 +271,10 @@
             <div class="col-md-4 mb-4">
                 <h5 class="mb-3 text-white">FOLLOW US</h5>
                 <div>
-                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -280,7 +283,7 @@
         
         <div class="row">
             <div class="col-md-6">
-                <p class="text-secondary mb-0">© 2025 NEO ARENA. All rights reserved.</p>
+                <p class="text-secondary mb-0">© 2026 NEO ARENA. All rights reserved.</p>
             </div>
             <div class="col-md-6 text-md-end">
                 <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
@@ -291,6 +294,6 @@
 </footer>
 
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
