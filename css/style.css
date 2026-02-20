@@ -193,8 +193,8 @@ h1, h2, h3, h4, h5, h6 {
     /* border: 2px solid #00ffff; */
 }
 .btn-neon-blue-1 {
-    width: 296px;
-    height: 126px;
+    /* width: 296px; */
+    /* height: 126px; */
     background: transparent;
     color: #00ffff;
     border-radius: 25px;
